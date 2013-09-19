@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!--<link type="text/css" rel="stylesheet" href="cssBootstrap/bootstrap.css" />-->
+<link type="text/css" rel="stylesheet" href="cssBootstrap/bootstrap.css" />
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 									.ajax({
 										url : 'http://ec2-50-18-26-146.us-west-1.compute.amazonaws.com:8080/JobSearch?location=dundee&industry='
 												+ localStorage.industryVar
-												+ "&industry=twitter",
+												+ "&industry=twitter&part_time=" + localStorage.hoursVar,
 										dataType : 'jsonp'
 									})
 						});
